@@ -1,0 +1,75 @@
+POLICY ACTIONS
+
+
+package com.softwareag.Practice111.PolicyActions;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.softwareag.Practice111.PolicyActions.Internationalized.InternationalizedString;
+import com.softwareag.Practice111.PolicyActions.PolicyActionParameter.PolicyActionParameter;
+
+public class PolicyActions {
+	
+	
+	private String id;
+	public List<InternationalizedString > names = new ArrayList<>();
+	public List<InternationalizedString > descriptions = new ArrayList<>();
+	private String templateKey;
+	public List<PolicyActionParameter> parameters = new ArrayList<>();
+	private String parentPolicyId;
+	private String stageKey;
+	private boolean active;
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public List<InternationalizedString> getNames() {
+		return names;
+	}
+	public void setNames(List<InternationalizedString> names) {
+		this.names = names;
+	}
+	public List<InternationalizedString> getDescriptions() {
+		return descriptions;
+	}
+	public void setDescriptions(List<InternationalizedString> descriptions) {
+		this.descriptions = descriptions;
+	}
+	public String getTemplateKey() {
+		return templateKey;
+	}
+	public void setTemplateKey(String templateKey) {
+		this.templateKey = templateKey;
+	}
+	public List<PolicyActionParameter> getParameters() {
+		return parameters;
+	}
+	public void setParameters(List<PolicyActionParameter> parameters) {
+		this.parameters = parameters;
+	}
+	public String getParentPolicyId() {
+		return parentPolicyId;
+	}
+	public void setParentPolicyId(String parentPolicyId) {
+		this.parentPolicyId = parentPolicyId;
+	}
+	public String getStageKey() {
+		return stageKey;
+	}
+	public void setStageKey(String stageKey) {
+		this.stageKey = stageKey;
+	}
+	public boolean isActive() {
+		return active;
+	}
+	public void setActive(boolean active) {
+		this.active = active;
+	}
+	
+	
+	
+
+}
